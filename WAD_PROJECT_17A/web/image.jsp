@@ -3,9 +3,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Create</title>
+    <script src="js/fabric.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/FileSaver.min.js"></script>
+    <script src="js/canvas-to-blob.js"></script>
+    <script src="js/plano.js"></script>
+    <script src="js/start.js"></script>
+    <script defer type="text/javascript" src="js/init.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
     <body>

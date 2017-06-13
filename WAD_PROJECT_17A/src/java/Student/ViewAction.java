@@ -10,8 +10,6 @@ import org.hibernate.Session;
 public class ViewAction extends ActionSupport {
     
     private List list;
-    private Integer class_;
-    User user = new User();
 
     public List getList() {
         return list;
@@ -28,7 +26,7 @@ public class ViewAction extends ActionSupport {
 
         Session hibernateSession;
         hibernateSession = HibernateUtil.getSessionFactory().openSession();
-        Query consulta = hibernateSession.createQuery("FROM Chart WHERE class = '" + user.getClass_() + "'");
+        Query consulta = hibernateSession.createQuery("FROM Chart");
         list = consulta.list();
         
         return SUCCESS;
