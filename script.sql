@@ -25,3 +25,22 @@ create table Description (
     groupc int(11),
     commentary varchar(50),
     primary key (idD));
+
+
+    INSERT INTO `User` (`idU`, `type`, `name`, `password`, `class`)
+    VALUES
+    	(1, 1, 'lalo', 'espino', 0),
+    	(2, 2, 'ruben', 'peredo', 1),
+    	(3, 3, 'edson', 'fabian', 1),
+    	(4, 3, 'gerardo', 'arzate', 1),
+    	(5, 2, 'nayeli', 'vega', 2),
+    	(6, 3, 'miguel', 'jimenez', 3),
+    	(9, 3, 'javier', 'garcia', 3),
+    	(10, 2, 'humberto', 'espino', 3);
+
+    INSERT INTO `Chart` (`idC`, `name`, `x1`, `y1`, `x2`, `y2`, `class`)
+    VALUES
+    	(6, 'Jjj', 100, 100, 200, 240, 8),
+    	(7, 'Peredo', 160, 100, 180, 260, 3),
+    	(8, 'Luis', 100, 100, 200, 240, 7),
+    	(9, 'Mosti', 260, 180, 360, 120, 9);
