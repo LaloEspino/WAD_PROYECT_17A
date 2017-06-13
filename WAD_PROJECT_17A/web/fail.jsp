@@ -5,15 +5,13 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <title>Login</title>
+        <title>Error</title>
     </head>
     <body>
-        <h1>Login</h1>
-        <s:form action="Login" >
-            <s:textfield name="name" key="User Name"/>
-            <s:password name="password" key="Password" />
-            <s:submit value="Login"/>
-        </s:form> 
-        <s:actionerror/>
+        <h1>Error!</h1>
+        Wrong password or user name. <br>
+        <form action="login.jsp">
+        <input type="submit" value="Back to Login">
+        </form>
     </body>
 </html>

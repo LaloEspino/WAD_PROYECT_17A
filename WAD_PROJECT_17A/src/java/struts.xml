@@ -4,7 +4,15 @@
 
 <struts>
     <!-- Configuration for the default package. -->
-    <package name="default" extends="struts-default">
-        
+    <package name="Login" extends="struts-default">
+        <action name="Login" method="execute" class="Login.LoginActionSupport">
+            <result name="ADM">adm/index.jsp</result>
+            <result name="PRO">pro/index.jsp</result>
+            <result name="ALM">alm/index.jsp</result>
+            <result name="FAIL">fail.jsp</result>
+        </action>
     </package>
 </struts>
+
+
+
