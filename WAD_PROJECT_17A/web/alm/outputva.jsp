@@ -10,7 +10,7 @@
 </head>
 <body>
     <h1>Hello Student!</h1>
-    <s:property value="name" />
+
     <div class="table">
         <table>
             <s:iterator value="list">

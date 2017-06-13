@@ -3,18 +3,29 @@ package Student;
 import com.opensymphony.xwork2.ActionSupport;
 import entity.Chart;
 import entity.HibernateUtil;
+import javax.servlet.http.HttpSession;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 public class ViewChart extends ActionSupport {
     
     public Integer id;
+    
+    private Chart chart;
     private String name;
     private Integer x1;
     private Integer y1;
     private Integer x2;
     private Integer y2;
+    private Integer class_;
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -56,13 +67,23 @@ public class ViewChart extends ActionSupport {
         this.y2 = y2;
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getClass_() {
+        return class_;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setClass_(Integer class_) {
+        this.class_ = class_;
     }
+
+    public Chart getChart() {
+        return chart;
+    }
+
+    public void setChart(Chart chart) {
+        this.chart = chart;
+    }
+
+    
     
     public ViewChart() {
     }
@@ -72,7 +93,17 @@ public class ViewChart extends ActionSupport {
         Session hibernateSession;
         hibernateSession = HibernateUtil.getSessionFactory().openSession();
         Transaction t = hibernateSession.beginTransaction();
-        Chart chart = (Chart)hibernateSession.load(Chart.class, id);
+        chart = (Chart)hibernateSession.load(Chart.class, id);
+        
+        System.out.println(chart.getName());
+        chart.getClass_();
+        chart.getName();
+        chart.getX1();
+        chart.getX2();
+        chart.getY1();
+        chart.getY2();
+        
+        
         //hibernateSession.delete(user);
         t.commit();
         

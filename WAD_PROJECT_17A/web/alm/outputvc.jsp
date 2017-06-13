@@ -16,8 +16,8 @@
 </head>
 <body>
         
-    <h1>Chart <s:property value="name" /></h1>
-    <s:property value="x1" />
+    <h1>Chart <s:property value="chart.name" /> </h1>
+    <s:text name="%{chart.name}"/>
         
     <canvas id="c" height="480" width="480"></canvas>
 
@@ -105,7 +105,12 @@
             });
         }
 
-        var line = makeLine([100, 100, 240, 200]);
+        var line = makeLine([
+            ${chart.x1},
+            ${chart.x2},
+            ${chart.y1},
+            ${chart.y2}
+                ]);
 
         canvas.add(line);
 
