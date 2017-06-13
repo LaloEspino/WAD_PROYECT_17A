@@ -6,13 +6,33 @@
     <!-- Configuration for the default package. -->
     <package name="Login" extends="struts-default">
         <action name="Login" method="execute" class="Login.LoginActionSupport">
-            <result name="ADM">adm/index.jsp</result>
+            <result name="ADM">administrator.jsp</result>
             <result name="PRO">pro/index.jsp</result>
             <result name="ALM">alm/index.jsp</result>
             <result name="FAIL">fail.jsp</result>
         </action>
     </package>
+    
+    <package name="Administrator" extends="struts-default">
+        <action name="delete" method="execute" class="Administrator.DeleteAction">
+            <result name="success">outputda.jsp</result>
+        </action>
+        <action name="deleteuser" method="execute" class="Administrator.DeleteUser">
+            <result name="success">outputdu.jsp</result>
+        </action>
+        <action name="insert" method="execute" class="Administrator.InsertUser">
+            <result name="success">outputiu.jsp</result>
+        </action>
+        <action name="update" method="execute" class="Administrator.UpdateAction">
+            <result name="success">outputma.jsp</result>
+        </action>
+        <action name="updateuser" method="execute" class="Administrator.UpdateUser">
+            <result name="success">outputmf.jsp</result>
+        </action>
+    </package>
 </struts>
+
+
 
 
 
