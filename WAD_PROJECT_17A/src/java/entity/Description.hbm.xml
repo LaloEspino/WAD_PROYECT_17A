@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 12-jun-2017 20:21:36 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Description" table="Description" catalog="waddbp" optimistic-lock="version">
+        <id name="idD" type="java.lang.Integer">
+            <column name="idD" />
+            <generator class="identity" />
+        </id>
+        <property name="user" type="java.lang.Integer">
+            <column name="user" />
+        </property>
+        <property name="groupc" type="java.lang.Integer">
+            <column name="groupc" />
+        </property>
+        <property name="commentary" type="string">
+            <column name="commentary" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>

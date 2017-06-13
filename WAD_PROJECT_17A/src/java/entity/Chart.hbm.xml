@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 12-jun-2017 20:21:36 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Chart" table="Chart" catalog="waddbp" optimistic-lock="version">
+        <id name="idC" type="java.lang.Integer">
+            <column name="idC" />
+            <generator class="identity" />
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="20" />
+        </property>
+        <property name="x1" type="java.lang.Integer">
+            <column name="x1" />
+        </property>
+        <property name="y1" type="java.lang.Integer">
+            <column name="y1" />
+        </property>
+        <property name="x2" type="java.lang.Integer">
+            <column name="x2" />
+        </property>
+        <property name="y2" type="java.lang.Integer">
+            <column name="y2" />
+        </property>
+    </class>
+</hibernate-mapping>
