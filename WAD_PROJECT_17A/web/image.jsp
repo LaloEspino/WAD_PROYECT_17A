@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Create</title>
@@ -19,30 +18,42 @@
     <body>
     
     <canvas id="c" height="480" width="480"></canvas>
+    
+    <s:form action="insertc.action">
+        
+    <s:textfield label="Name" name="name"/>
+    <s:textfield label="Group" name="class_"/>
 
     <s:textfield id="r0" type="button" value="R" />
     <s:textfield id="l0" type="button" value="L" />
-    <s:textfield id="texth0" type="number" readonly="readonly" />
+    <s:textfield id="texth0" type="number" readonly="readonly" name="x1"/>
 
 
     <!--<input id="r1" type="button" class="button-add" />-->
     <s:textfield id="r1" type="button" value='R' />
     <s:textfield id="l1" type="button" value="L" />
 
-    <s:textfield id="texth1" type="number" readonly="readonly" />
-    x: <s:textfield id="xf" type="number" readonly="readonly" />
+    <s:textfield id="texth1" type="number" readonly="readonly" name="x2"/>
     <br />
 
     <s:textfield id="u0" type="button" value="U" />
     <s:textfield id="d0" type="button" value="D" />
-    <s:textfield id="textv0" type="number" readonly="readonly" />
+    <s:textfield id="textv0" type="number" readonly="readonly" name="y1"/>
     <s:textfield id="u1" type="button" value="U" />
     <s:textfield id="d1" type="button" value="D" />
-    <s:textfield id="textv1" type="number" readonly="readonly" />
-    y: <s:textfield id="yf" type="number" readonly="readonly" />
+    <s:textfield id="textv1" type="number" readonly="readonly" name="y2"/>
+    
+        <s:textfield label="x" id="xf" type="number" readonly="readonly" />
+
+    <s:textfield label="y" id="yf" type="number" readonly="readonly" />
+    
+            <s:submit value="Create" />
+
     <br />
     <br />
     <br />
+    
+    </s:form>
 
     <s:textfield id="save" type="button" value="Save as Image" />
 

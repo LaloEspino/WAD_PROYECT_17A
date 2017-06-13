@@ -20,17 +20,17 @@
         
     <canvas id="c" height="480" width="480"></canvas>
 
-    <s:textfield id="texth0" type="number" readonly="readonly" />
+    <s:textfield id="texth0" type="number" readonly="readonly" disabled="true"/>
 
 
 
-    <s:textfield id="texth1" type="number" readonly="readonly"  />
-    x: <s:textfield id="xf" type="number" readonly="readonly" />
+    <s:textfield id="texth1" type="number" readonly="readonly" disabled="true"/>
+    x: <s:textfield id="xf" type="number" readonly="readonly" disabled="true"/>
     <br />
 
-    <s:textfield id="textv0" type="number" readonly="readonly" />
-    <s:textfield id="textv1" type="number" readonly="readonly" />
-    y: <s:textfield id="yf" type="number" readonly="readonly" />
+    <s:textfield id="textv0" type="number" readonly="readonly" disabled="true"/>
+    <s:textfield id="textv1" type="number" readonly="readonly" disabled="true"/>
+    y: <s:textfield id="yf" type="number" readonly="readonly" disabled="true"/>
     
     
     

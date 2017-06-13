@@ -9,12 +9,8 @@
 </head>
 <body>
     <a href="login.jsp" >Logout</a> <br />
-    <h1>Hello Administrator!</h1>
+    <h1>Hello Professor!</h1>
     <a href="deletec.action" >Delete chart</a> <br />
-    <a href="updatec.action" >Modify chart</a> <br />
-    <!--
-    <a href="outputia_p.jsp" >Insert chart</a> <br />
-    -->
     <a href="image.jsp" >Insert chart</a>
 </body>
 </html>

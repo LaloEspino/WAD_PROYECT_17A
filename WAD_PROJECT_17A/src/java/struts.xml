@@ -33,25 +33,14 @@
     
     <package name="Profesor" extends="struts-default">
         <action name="insertc" method="execute" class="Profesor.InsertChart">
-            <result name="success">image.jsp</result>
-            <!--
-            <result name="success">image.html</result>
-            -->
+            <result name="success">outputia_p.jsp</result>
         </action>
-        <!--
-        <action name="delete" method="execute" class="Administrator.DeleteAction">
-            <result name="success">outputda.jsp</result>
+        <action name="deletec" method="execute" class="Profesor.DeleteAction">
+            <result name="success">outputdca.jsp</result>
         </action>
-        <action name="deleteuser" method="execute" class="Administrator.DeleteUser">
-            <result name="success">outputdu.jsp</result>
+        <action name="deletechart" method="execute" class="Profesor.DeleteChart">
+            <result name="success">outputdc.jsp</result>
         </action>
-        <action name="update" method="execute" class="Administrator.UpdateAction">
-            <result name="success">outputma.jsp</result>
-        </action>
-        <action name="updateuser" method="execute" class="Administrator.UpdateUser">
-            <result name="success">outputmf.jsp</result>
-        </action>
-        -->
     </package>
     
     <package name="Student" extends="struts-default">

@@ -12,20 +12,12 @@ import org.hibernate.Transaction;
  */
 public class InsertChart extends ActionSupport {
     
-    private Integer idC;
     private String name;
     private Integer x1;
     private Integer y1;
     private Integer x2;
     private Integer y2;
-
-    public Integer getIdC() {
-        return idC;
-    }
-
-    public void setIdC(Integer idC) {
-        this.idC = idC;
-    }
+    private Integer class_;
 
     public String getName() {
         return name;
@@ -66,6 +58,16 @@ public class InsertChart extends ActionSupport {
     public void setY2(Integer y2) {
         this.y2 = y2;
     }
+
+    public Integer getClass_() {
+        return class_;
+    }
+
+    public void setClass_(Integer class_) {
+        this.class_ = class_;
+    }
+    
+    
     
     public InsertChart() {
     }
@@ -78,6 +80,7 @@ public class InsertChart extends ActionSupport {
         
         Chart chart = new Chart();
         chart.setName(name);
+        chart.setClass_(class_);
         chart.setX1(x1);
         chart.setY1(y1);
         chart.setX2(x2);
