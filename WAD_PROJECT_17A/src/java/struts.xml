@@ -27,7 +27,7 @@
             <result name="success">outputma.jsp</result>
         </action>
         <action name="updateuser" method="execute" class="Administrator.UpdateUser">
-            <result name="success">outputmf.jsp</result>
+            <result name="success">outputmu.jsp</result>
         </action>
     </package>
 </struts>

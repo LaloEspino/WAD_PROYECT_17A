@@ -8,10 +8,19 @@ import org.hibernate.Transaction;
 
 public class UpdateUser extends ActionSupport {
     
+    private Integer idU;
     private Integer type;
     private String name;
     private String password;
     private Integer class_;
+
+    public Integer getIdU() {
+        return idU;
+    }
+
+    public void setIdU(Integer idU) {
+        this.idU = idU;
+    }
 
     public Integer getType() {
         return type;
@@ -53,8 +62,9 @@ public class UpdateUser extends ActionSupport {
         Session hibernateSession;
         hibernateSession = HibernateUtil.getSessionFactory().openSession();
         Transaction t  = hibernateSession.beginTransaction();
-        
-        User user = new User();
+                
+        User user = (User)hibernateSession.load(User.class,idU);
+
         user.setClass_(class_);
         user.setName(name);
         user.setPassword(password);

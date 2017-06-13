@@ -14,21 +14,17 @@
     </nav>
     <h1>Update</h1>
     <div class="table">
-        <table>
             <s:iterator value="list">
-                <s:url action="updateuser.action" var="url">
-                    <s:param name="id">
-                        <s:property value="idU" />
-                    </s:param>
-                </s:url>
-                <tr>
-                    <th><s:property value="name" /></th>
-                    <th>
-                        <a href="<s:property value='#url' />"> <i class="material-icons icon-blue">create</i> </a>
-                    </th>
-                </tr>
+                <s:form action="updateuser.action">
+                    <s:textfield readonly="true" name="idU" label="ID"/>
+                    <s:textfield name="name" label="Username" />
+                    <s:password  name="password" label="Password" />
+                    <s:textfield name="type" label="Type" />
+                    <s:textfield name="class_" label="Group" type="number" />
+                    <s:submit value="Update"/>
+                </s:form>
             </s:iterator>
-        </table>
+
     </div>
 </body>
 </html>
