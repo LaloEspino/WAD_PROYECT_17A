@@ -3,7 +3,7 @@
 "http://struts.apache.org/dtds/struts-2.0.dtd">
 
 <struts>
-    <!-- Configuration for the default package. -->
+
     <package name="Login" extends="struts-default">
         <action name="Login" method="execute" class="Login.LoginActionSupport">
             <result name="ADM">administrator.jsp</result>
@@ -27,7 +27,7 @@
             <result name="success">outputma.jsp</result>
         </action>
         <action name="updateuser" method="execute" class="Administrator.UpdateUser">
-            <result name="success">outputmf.jsp</result>
+            <result name="success">outputmu.jsp</result>
         </action>
     </package>
     
@@ -61,15 +61,6 @@
         <action name="viewchart" method="execute" class="Student.ViewChart">
             <result name="success">alm/outputvc.jsp</result>
         </action>
-        <!--<action name="insert" method="execute" class="Administrator.InsertUser">
-            <result name="success">outputiu.jsp</result>
-        </action>
-        <action name="update" method="execute" class="Administrator.UpdateAction">
-            <result name="success">outputma.jsp</result>
-        </action>
-        <action name="updateuser" method="execute" class="Administrator.UpdateUser">
-            <result name="success">outputmf.jsp</result>
-        </action>-->
     </package>
 
 </struts>
