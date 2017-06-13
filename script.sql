@@ -17,6 +17,7 @@ create table Chart (
     y1 int(11),
     x2 int(11),
     y2 int(11),
+    class int(11),
     primary key (idC));
 
 create table Description (
