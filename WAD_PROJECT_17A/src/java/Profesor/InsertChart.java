@@ -1,6 +1,10 @@
-package actionsupport;
+package Profesor;
 
 import com.opensymphony.xwork2.ActionSupport;
+import entity.Chart;
+import entity.HibernateUtil;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
 
 /**
  *
@@ -68,9 +72,20 @@ public class InsertChart extends ActionSupport {
     
     public String execute() throws Exception {
         
+        Session hibernateSession;
+        hibernateSession = HibernateUtil.getSessionFactory().openSession();
+        Transaction t = hibernateSession.beginTransaction();
         
+        Chart chart = new Chart();
+        chart.setName(name);
+        chart.setX1(x1);
+        chart.setY1(y1);
+        chart.setX2(x2);
+        chart.setY2(y2);
         
-        return INPUT;
+        hibernateSession.save(chart);
+        t.commit();
+        return SUCCESS;
     }
     
 }
