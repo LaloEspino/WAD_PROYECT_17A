@@ -17,27 +17,18 @@
 <body>
         
     <h1>Chart <s:property value="chart.name" /> </h1>
-    <s:text name="%{chart.name}"/>
         
     <canvas id="c" height="480" width="480"></canvas>
 
-    <s:textfield readonly="true" id="r0" type="button" value="R" />
-    <s:textfield id="l0" type="button" value="L" />
     <s:textfield id="texth0" type="number" readonly="readonly" />
 
 
-    <s:textfield id="r1" type="button" value='R' />
-    <s:textfield id="l1" type="button" value="L" />
 
     <s:textfield id="texth1" type="number" readonly="readonly"  />
     x: <s:textfield id="xf" type="number" readonly="readonly" />
     <br />
 
-    <s:textfield id="u0" type="button" value="U" />
-    <s:textfield id="d0" type="button" value="D" />
     <s:textfield id="textv0" type="number" readonly="readonly" />
-    <s:textfield id="u1" type="button" value="U" />
-    <s:textfield id="d1" type="button" value="D" />
     <s:textfield id="textv1" type="number" readonly="readonly" />
     y: <s:textfield id="yf" type="number" readonly="readonly" />
     

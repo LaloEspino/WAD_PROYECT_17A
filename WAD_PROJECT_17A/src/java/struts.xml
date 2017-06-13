@@ -8,7 +8,7 @@
         <action name="Login" method="execute" class="Login.LoginActionSupport">
             <result name="ADM">administrator.jsp</result>
             <result name="PRO">profesor.jsp</result>
-            <result name="ALM">alm/student.jsp</result>
+            <result name="ALM">student.jsp</result>
             <result name="FAIL">fail.jsp</result>
         </action>
     </package>
@@ -56,10 +56,10 @@
     
     <package name="Student" extends="struts-default">
         <action name="view" method="execute" class="Student.ViewAction">
-            <result name="success">alm/outputva.jsp</result>
+            <result name="success">outputva.jsp</result>
         </action>
         <action name="viewchart" method="execute" class="Student.ViewChart">
-            <result name="success">alm/outputvc.jsp</result>
+            <result name="success">outputvc.jsp</result>
         </action>
     </package>
 
