@@ -15,6 +15,16 @@ public class Chart  implements java.io.Serializable {
      private Integer y1;
      private Integer x2;
      private Integer y2;
+     private Integer class_;
+
+    public Integer getClass_() {
+        return class_;
+    }
+
+    public void setClass_(Integer class_) {
+        this.class_ = class_;
+    }
+     
 
     public Chart() {
     }

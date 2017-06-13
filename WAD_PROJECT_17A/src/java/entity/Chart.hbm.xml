@@ -23,5 +23,9 @@
         <property name="y2" type="java.lang.Integer">
             <column name="y2" />
         </property>
+        <property name="class_" type="java.lang.Integer">
+            <column name="class" />
+        </property>
+
     </class>
 </hibernate-mapping>

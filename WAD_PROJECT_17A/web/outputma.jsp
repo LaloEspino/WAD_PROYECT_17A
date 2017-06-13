@@ -14,16 +14,16 @@
     </nav>
     <h1>Update</h1>
     <div class="table">
-            <s:iterator value="list">
-                <s:form action="updateuser.action">
-                    <s:textfield readonly="true" name="idU" label="ID"/>
-                    <s:textfield name="name" label="Username" />
-                    <s:password  name="password" label="Password" />
-                    <s:textfield name="type" label="Type" />
-                    <s:textfield name="class_" label="Group" type="number" />
-                    <s:submit value="Update"/>
-                </s:form>
-            </s:iterator>
+        <s:iterator value="list">
+            <s:form action="updateuser.action">
+                <s:textfield readonly="true" name="idU" label="ID"/>
+                <s:textfield name="name" label="Username" />
+                <s:password  name="password" label="Password" />
+                <s:textfield name="type" label="Type" />
+                <s:textfield name="class_" label="Group" type="number" />
+                <s:submit value="Update"/>
+            </s:form>
+        </s:iterator>
 
     </div>
 </body>
