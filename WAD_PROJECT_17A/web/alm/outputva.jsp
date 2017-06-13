@@ -14,7 +14,6 @@
     <div class="table">
         <table>
             <s:iterator value="list">
-                <s:if test="%{#list.class_ != <s:property value="group" />}">
                     <s:url action="viewchart.action" var="url">
                         <s:param name="id">
                             <s:property value="idC" />
@@ -26,7 +25,6 @@
                             <a href="<s:property value='#url' />"> <i class="material-icons icon-blue">visibility</i> </a>
                         </th>
                     </tr>
-                    </s:if>
 
             </s:iterator>
         </table>
