@@ -41,6 +41,12 @@
         <action name="deletechart" method="execute" class="Profesor.DeleteChart">
             <result name="success">outputdc.jsp</result>
         </action>
+        <action name="updatec" method="execute" class="Profesor.UpdateAction">
+            <result name="success">outputmc.jsp</result>
+        </action>
+        <action name="updatechart" method="execute" class="Profesor.UpdateChart">
+            <result name="success">outputmcu.jsp</result>
+        </action>
     </package>
     
     <package name="Student" extends="struts-default">

@@ -5,13 +5,10 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Profesor</title>
+    <title>JSP Page</title>
 </head>
 <body>
-    <a href="login.jsp" >Logout</a> <br />
-    <h1>Hello Professor!</h1>
-    <a href="deletec.action" >Delete chart</a> <br />
-    <a href="updatec.action" >Update chart</a> <br />
-    <a href="image.jsp" >Insert chart</a>
+    <h1>Updated chart!</h1>
+    <a href="profesor.jsp">Back to index</a>
 </body>
 </html>
